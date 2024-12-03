@@ -28,6 +28,14 @@ app.get('/pokemons', (req, res) => {
   ]);
 });
 
+app.post('/series', (req, res) => {
+  res.json([
+      { nome: 'Pretty Little Liars', ano: 2010 },
+      { nome: 'Stranger Things', ano: 2016 },
+      { nome: 'Chocolate com Pimenta', ano: 2003 }
+  ]);
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
